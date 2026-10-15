@@ -19,7 +19,7 @@ total = count1 + count2
 pr1 = count1/total 
 
 pr2 = count2/total
-height = 100.0
+height = 20.0
 h1 = pr1*height
 h2 = pr2*height
 print(h2)
@@ -28,7 +28,8 @@ for row in range(int(height) , 0 , -1):
     if row<=h1:
         left = (red+" "+reset)*width
     else: left = " "* width
-    if row < h2 :
+    if row <= h2 :
         right = (red+" "+reset)* width 
     else: right = " "* width 
     print(f"    {left}                                           {right}")
+print("    "+ str(pr1*100) + "%                                             "+str(pr2*100)+"%")

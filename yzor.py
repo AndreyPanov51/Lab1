@@ -1,7 +1,7 @@
 white = "\x1b[107m"
 reset = "\x1b[0m"
 size = 5
-num_diamonds = 14
+num_diamonds = 12
 total_width = num_diamonds * (2 * size) + 1
 for row in range(2 * size + 1):
     line = ""
